@@ -1,0 +1,124 @@
+<style>
+    .img img {
+        display: block;
+        width: 264px;
+        height: 100px;
+    }
+
+
+    .container {
+        width: 900px;
+        margin: 0 auto;
+    }
+
+
+    .left {
+        width: 300px;
+        float: left;
+    }
+
+
+    div.img {
+        font-size: 12px;
+        display: inline-block;
+        padding: 5px;
+        border: 1px solid #BBB;
+        margin: 10px 0;
+    }
+
+</style>
+
+
+<div class="container">
+
+    <div class="left">
+
+        <h2>Not WebP</h2>
+
+        <div class="img">
+            bayrak.jpg (425KB)
+            <img src="http://localhost:8080/bayrak.jpg">
+        </div>
+
+        <div class="img">
+            bayrak-optimized.jpg (157KB)
+            <img src="http://localhost:8080/bayrak-optimized.jpg">
+        </div>
+
+
+        <div class="img">
+            bayrak.png (2MB)
+            <img src="http://localhost:8080/bayrak.png">
+        </div>
+
+
+        <div class="img">
+            bayrak-optimized.png (1.1MB)
+            <img src="http://localhost:8080/bayrak-optimized.png">
+        </div>
+
+    </div> <!-- .left -->
+
+
+    <div class="left">
+        <h2>WebP</h2>
+
+        <div class="img">
+            bayrak.jpg?of=webp (205KB)
+            <img src="http://localhost:8080/bayrak.jpg?of=webp">
+        </div>
+
+        <div class="img">
+            bayrak-optimized.jpg?of=webp (45KB)
+            <img src="http://localhost:8080/bayrak-optimized.jpg?of=webp">
+        </div>
+
+
+        <div class="img">
+            bayrak.png?of=webp (44KB)
+            <img src="http://localhost:8080/bayrak.png?of=webp">
+        </div>
+
+
+        <div class="img">
+            bayrak-optimized.png?of=webp (46KB)
+            <img src="http://localhost:8080/bayrak-optimized.png?of=webp">
+        </div>
+
+    </div> <!-- .left -->
+
+
+    <div class="left">
+        <h2>WebP with quality = 80</h2>
+
+        <div class="img">
+            bayrak.jpg?of=webp&q=80 (56KB)
+            <img src="http://localhost:8080/bayrak.jpg?of=webp&q=80">
+        </div>
+
+        <div class="img">
+            bayrak-optimized.jpg?of=webp&q=80 (55KB)
+            <img src="http://localhost:8080/bayrak-optimized.jpg?of=webp&q=80">
+        </div>
+
+
+        <div class="img">
+            bayrak.png?of=webp&q=80 (44KB)
+            <img src="http://localhost:8080/bayrak.png?of=webp&q=80">
+        </div>
+
+
+        <div class="img">
+            bayrak-optimized.png?of=webp&q=80 (60KB)
+            <img src="http://localhost:8080/bayrak-optimized.png?of=webp&q=80">
+        </div>
+
+    </div> <!-- .left -->
+
+
+    <div style="clear:both; text-align: center; padding: 20px">
+        <h3>Network output</h3>
+        <img src="/dev-tools.png">
+    </div>
+
+</div> <!-- .container -->
