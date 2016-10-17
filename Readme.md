@@ -17,6 +17,7 @@ docker run \
     --name ngx \
     -p 80:80 \
     -p 8080:8080 \
+    -p 8090:8090 \
     -v `pwd`/html:/opt/nginx/html/ \
     sonsuzdongu/ngx_small_light
 ```
